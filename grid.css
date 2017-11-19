@@ -1,0 +1,21 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+article, aside { flex-basis: 100%; }
+@media (min-width: 576px) {
+  article { flex: 3; }
+  aside { flex: 2 }
+}
+@media (min-width: 768px) {
+  article { flex: 7; }
+  aside { flex: 3 }
+}
+@media (min-width: 992px) {
+  article { flex: 1.5; }
+  aside { flex: 0.5 }
+}
